@@ -5,4 +5,4 @@ const assertEqual = function(actual, expected) {
 };
 
 assertEqual("Lighthouse Labs", "Lighthouse Labs");
-assertEqual(1, 2);
+assertEqual(1, 3);
