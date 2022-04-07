@@ -9,7 +9,7 @@ const assertEqual = function(actual, expected) {
 const findKeyByValue = function(obj, val) {
   let findKey = Object.keys(obj);
   let whereKey = 0;
-  for (let element of obj) {
+  for (let element in obj) {
     if (obj[element] === val) {
       return findKey[whereKey];
     }
@@ -26,3 +26,4 @@ const bestTVShowsByGenre = {
 
 assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
 assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
+assertEqual(findKeyByValue(bestTVShowsByGenre, "The Expanse"), "comedy");
