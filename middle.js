@@ -25,3 +25,19 @@ const assertArraysEqual = function(array1, array2) {
     console.log(`Assertion Failed 🥶🥶🥶: ${array1} !== ${array2}`);
   }
 };
+
+const middle = function(arr) {
+  let middleElement = arr[arr.length / 2];
+  console.log('middle element: ', middleElement);
+
+  if (arr.length <= 2) {
+    return [];
+  } else if (arr.length % 2 === 0) {
+    return [arr[middleElement - 1], arr[middleElement]];
+
+  } else {
+    return [arr[middleElement]];
+  }
+};
+
+middle([1, 2, 3, 4, 5]);
