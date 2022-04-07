@@ -27,17 +27,21 @@ const assertArraysEqual = function(array1, array2) {
 };
 
 const middle = function(arr) {
-  let middleElement = arr[arr.length / 2];
-  console.log('middle element: ', middleElement);
-
+  let middleElement = [];
   if (arr.length <= 2) {
-    return [];
+    return middleElement;
   } else if (arr.length % 2 === 0) {
-    return [arr[middleElement - 1], arr[middleElement]];
-
+    //return middleElement = [arr[(middleElement.length / 2) - 1], arr[middleElement.length / 2]];
+    let midIdx = arr.length / 2;
+    let befMidIdx = midIdx - 1;
+    return [arr[befMidIdx], arr[midIdx]];
   } else {
-    return [arr[middleElement]];
+    let midIdx = Math.floor(arr.length / 2);
+      return [arr[midIdx]];
+    //return middleElement = arr[(middleElement.length / -1) / 2];
   }
+  //return middleElement;
 };
 
-middle([1, 2, 3, 4, 5]);
+console.log(middle([1, 2, 3]));
+console.log(middle([1, 2, 3, 4]));

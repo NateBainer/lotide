@@ -4,21 +4,25 @@ const assertEqual = function(actual, expected) {
   } else (console.log('Assertion Failed 🥶🥶🥶: [actual] !== [expected]'));
 };
 
+
+//STARTS HERE
 const countLetters = function(string) {
   const results = {};
-
-  for (let letters of string) {
-    
-    if (letters !== " ") {
-      if (results[letters]) {
-        results[letters += 1];
+  //const stringArr = string.split("");
+  //console.log(stringArr)
+  for (let char of string) {
+    //console.log(char)
+    if (char !== " ") {
+      if (results[char]) {
+        results[char] += 1;
       } else {
-        results[letters] = 1;
+        results[char] = 1;
       }
     }
 
-    return results;
-  }
+    
+  } return results;
 };
 
-console.log(countLetters("lighthouse in the house"));
+console.log(countLetters("hello"));
+// h : 1, e : 1, l : 2, o : 1 

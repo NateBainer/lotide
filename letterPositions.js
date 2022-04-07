@@ -20,7 +20,7 @@ const assertArraysEqual = function(array1, array2) {
 
 
 
-
+//STARTS HERE
 const letterPositions = function(sentence) {
   const results = {};
   for (let i = 0; i < sentence.length; i++) {
