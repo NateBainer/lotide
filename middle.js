@@ -19,7 +19,7 @@ const middle = function(arr) {
     return [arr[befMidIdx], arr[midIdx]];
   } else {
     let midIdx = Math.floor(arr.length / 2);
-      return [arr[midIdx]];
+    return [arr[midIdx]];
     //return middleElement = arr[(middleElement.length / -1) / 2];
   }
   //return middleElement;

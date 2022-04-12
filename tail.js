@@ -6,12 +6,8 @@ const tail = function(arry) {
   return result;
 };
 
-const words = [1,2,3];
-tail(words);
-assertEqual(words.length, 7);
-
-const newWords = [1,2,3,4,5];
-tail(newWords);
-assertEqual(newWords.length, 5);
+const words = ["Yo Yo", "Lighthouse", "Labs"];
+tail(words); // no need to capture the return value since we are not checking it
+assertEqual(words.length, 3); 
 
 module.exports = tail;
