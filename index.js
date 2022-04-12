@@ -11,3 +11,5 @@ const fullBody = {
 module.exports = {
  fullBody
 };
+
+module.exports = index;

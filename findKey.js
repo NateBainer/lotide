@@ -1,7 +1,10 @@
 
    
-const findKey = function(object, callback) {
-  for (let key in object) {
-    if (callback(object[key])) return key;
+const findKey = function(obj, cB) {
+  for (let key in obj) {
+    if (cB(obj[key])) 
+      return key;
   }
 };
+
+module.exports = findKey;
