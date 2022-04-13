@@ -46,4 +46,16 @@ The following functions are currently implemented:
 
 * `function9(head)`: This function scans an array and returns only the first value of said array.
 
-* `function10(index)`: 
+* `function10(index)`: An index containing all other functions in lotide.
+
+* `function11(letterPositions)`: A function that identifies individual letters in a string and returns them in an array, showing their numbered position.
+
+* `function12(map)`: A function that takes in an array and a callback function. It then returns an array based on the conditions set by the callback function.
+
+* `function13(middle)`: A function that takes in an array and returns the middle-most element of the array if the array has an odd number of elements. If it has an even number, it returns the middle-two elements of the array. If the array has 2 or less elements, return an empty array.
+
+* `function14(tail)`: A function that takes an array and returns all elements in the array except for the first one. 
+
+* `function15(takeUntil)`: A function that returns a "slice" of an array, starting from the beginning on, until a certain condition is met (take until condition is met).
+
+* `function16(without)`: A function that takes in two arrays (one source array and one itemsToRemove) and returns the items from the source array that are not present in the itemsToRemove array.
